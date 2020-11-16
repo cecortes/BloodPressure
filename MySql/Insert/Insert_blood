@@ -1,0 +1,1 @@
+INSERT INTO blood (sisto,diasto,estado) VALUES (0,0,'NA');
