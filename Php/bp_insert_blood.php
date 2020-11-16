@@ -6,14 +6,14 @@ $password="sylka1234";
 
 $json=array();
 
-if(isset($_GET["edo"]) && ($_GET["sisto"]) && ($_GET["diasto"])){
-    $edo=$_GET['edo'];
+if(isset($_GET["sisto"]) && ($_GET["diasto"]) && ($_GET["edo"])){
     $sisto=$_GET['sisto'];
-    $diasto=$_GET['diasto'];   
+    $diasto=$_GET['diasto'];  
+    $edo=$_GET['edo']; 
 
     $conexion=mysqli_connect($hostname,$username,$password,$database);
 		
-    $consulta="INSERT INTO blood(sisto, diasto, estado) VALUES ('{$sisto}','{$diasto}','{$edo}')";
+    $consulta="INSERT INTO blood(blood_id, sisto, diasto, estado) VALUES (0,'{$sisto}','{$diasto}','{$edo}')";
     $resultado=mysqli_query($conexion,$consulta);
 
     if($consulta){
