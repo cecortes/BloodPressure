@@ -63,7 +63,7 @@ public class BloodPressure {
 
     @Override
     public String toString() {
-        blood_create += "   |   Sistólica: " + sisto + "    /   Diastólica: " + diasto + "      |   ID: " + blood_id;
+        blood_create += " | Sistólica: " + sisto + " / Diastólica: " + diasto + " | ID: " + blood_id;
         return blood_create;
     }
 }
