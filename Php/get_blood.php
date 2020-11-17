@@ -12,7 +12,7 @@ $resultado=mysqli_query($conexion,$consulta);
 
 if($consulta){
 
-    if($reg=mysqli_fetch_array($resultado)){
+    while ($reg=mysqli_fetch_array($resultado)){
         $json['bp'][]=$reg;
     }
 
