@@ -7,7 +7,7 @@ $password="sylka1234";
 $json=array();
 
 $conexion=mysqli_connect($hostname,$username,$password,$database);
-$consulta="SELECT * FROM blood";
+$consulta="SELECT * FROM blood ORDER BY blood_id DESC";
 $resultado=mysqli_query($conexion,$consulta);
 
 if($consulta){
