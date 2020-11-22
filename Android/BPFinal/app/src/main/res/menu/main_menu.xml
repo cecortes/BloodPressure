@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Menu_Registrar"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Registrar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/Menu_Consulta"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Consultar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/Menu_Enviar"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Enviar"
+        app:showAsAction="always" />
+</menu>
